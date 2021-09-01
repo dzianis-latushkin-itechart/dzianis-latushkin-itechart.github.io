@@ -6,7 +6,7 @@
         <a href="//google.com">Leave page</a>
     </body>
     <script>
-        document.addEventListener('pagehide', (e) => {
+        window.addEventListener('pagehide', (e) => {
             e.preventDefault()
             return confirm('Are you sure want to leave the page?');
         })
