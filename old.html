@@ -8,7 +8,7 @@
     <script>
         window.addEventListener('beforeunload', (e) => {
             e.preventDefault()
-            return 'Are you sure want to leave the page?';
+            e.returnValue = 'Are you sure want to leave the page?';
         })
     </script>
 </html>
