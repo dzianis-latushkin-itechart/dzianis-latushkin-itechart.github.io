@@ -1,0 +1,14 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <a href="//google.com">Leave page</a>
+    </body>
+    <script>
+        window.addEventListener('beforeunload', (e) => {
+            e.preventDefault()
+            return 'Are you sure want to leave the page?';
+        })
+    </script>
+</html>
